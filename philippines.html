@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="en-us" http-equiv="Content-Language">
+	<title>My Perfect Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link href="KC_CSS.css" rel="stylesheet">  <!-- CSS link -->
+	
+</head>
+<body>
+<div class="wrapper">
+	
+	<header>
+		<div id="logo">
+			<a href="index.html"><img alt="myLogo" height="50" src="images/kcLOGO.png" width="60"></a>
+		</div>
+		
+		<nav>
+			<ul>		
+				<li><a href="index.html">Home</a></li>
+				<li><a href="philippines.html">Philippines</a></li>
+				<li><a href="uae.html">United Arab Emirates</a></li>
+				<li><a href="canada.html">Canada</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<div class="breadcrumbs">
+		<p><a href="index.html">Home  ></a> <a href="philippines.html"> Philippines</a></p>
+	</div>
+	
+	<div class="countries">
+		<h3 style="text-align:center">PHILIPPINES</h3>
+		<p>	The Philippines is located in Southeast Asia with 7,000 islands and they are divided into three main 
+		geographic regions, Luzon to be the largest and where the Manila, the capital city is located. Second largest region is Mindanao 
+		commonly known as Southern Philippines and finally the smallest region and is the central region of the Philippines. Philippines 
+		weather is tropical with two seasons, summer and rain. <br><br> Explore this tropical country by enjoying the white sand beaches 
+		like Polompon Island in Leyte and Palawan, try the mouth-watering exotic food or the freshly cook seafood, stroll around the historical 
+		places like Batanes and Leyte.
+		</p>
+	</div>
+	<br>
+	
+<div class="groupAll">	
+			
+	<div class="groupLeft">			
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'Batanes')" id="defaultOpen">Batanes</button>
+		  <button class="tablinks" onclick="openCity(event, 'Leyte')">Leyte</button>
+		  <button class="tablinks" onclick="openCity(event, 'Palawan')">Palawan</button>
+		</div>
+	</div>
+	
+	<div class="groupRight">
+		<div id="Batanes" class="tabcontent">
+		  <h4>Batanes</h4>
+		  <p style="font-size:90%; text-align:justify;"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Discover this smallest province in the Philippines, 
+		  Batanes. This is one of the historical places in the Philippines. If you are a person who loves exploring other countries culture, 
+		  visit this place and relish with their exquisite culture. And, dive into their beautiful beaches and lagoons, climb a mountain and 
+		  discover the beauty of their caves, or just simply relax on one of their small islands.
+		  </p>
+			<div class="tabLayers">
+				<img alt="batanes1" src="images/philippines/batanes1.jpg" width="40%" height="30%"></img>
+				<img alt="batanes2" src="images/philippines/batanes2.jpg" width="40%" height="30%"></img>  
+			</div><div class="tabLayers">
+				<img alt="batanes3" src="images/philippines/batanes3.jpg" width="40%" height="30%"></img> 
+				<img alt="batanes4" src="images/philippines/batanes4.jpg" width="40%" height="30%"></img> 
+			</div>
+		</div>
+		
+		<div id="Leyte" class="tabcontent">
+			<h4>Leyte</h4>
+			<p style="font-size:90%; text-align:justify;">	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Leyte is a province located in Visayas Region. 
+			It has two major cities, Ormoc and the port of Tacloban. Leyte is one of the historical places in the Philippines because it is the 
+			place where Gen. Douglas McArthur and his team landed to help our forefathers to fight against the Japanese invasion during the 
+			World War II. So, schedule a visit with this place and discover its historic story. Aside from that, enjoy riding a habal-habal, 
+			a motorbike with a wide seat and a roof, while doing your site seeing. Stop by one local street stand and try their special street 
+			foods. You can also hire a local boat and go on a river cruise in Sohoton Natural Bridge Park where you can find a cathedral style 
+			underground cave.</p>
+			
+			<div class="tabLayers">
+				<img alt="albay" src="images/philippines/leyte-albay.jpg" width="40%"></img>
+				<img alt="leyteGulf" src="images/philippines/leyte-mcArthur.JPG" width="40%"></img> 
+			</div><div class="tabLayers">			
+				<img alt="palompon2" src="images/philippines/palompon2.JPG" width="40%"></img>
+				<img alt="palompon3" src="images/philippines/palompon3.JPG" width="40%"></img>				
+			</div>	
+		</div>
+
+		<div id="Palawan" class="tabcontent">
+		  <h4>Palawan</h4>
+		  <p style="font-size:90%; text-align:justify;"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Palawan is a pristine island located eastern 
+		  Visayas Region. Palawan is rich with natural wonders. So, add Palawan on your bucket list and swim through underwater mountains, 
+		  snorkel over reefs, visit the amazingly small and big lagoons, tour on their astonishing waterfalls, and feel the air as you 
+		  slide down the 750-meter-long zip lines. If you are traveling with your friends, experience the Palawan’s Full Moon Party or ride 
+		  on to one of their Party Boat and have unlimited alcohol, hang out with carefree travelers while enjoying world-class scenery 
+		  all in one place.	</p>
+			<div class="tabLayers">
+				<img alt="palawan1" src="images/philippines/palawan1.jpg" width="40%"></img>
+				<img alt="palawan2" src="images/philippines/palawan2.jpg" width="40%"></img> 
+			</div><div class="tabLayers">			
+				<img alt="palawan3" src="images/philippines/palawan3.jpg" width="40%"></img>
+				<img alt="palawan4" src="images/philippines/palawan4.jpg" width="40%"></img>
+			</div>
+		</div>
+		
+		
+		<script>
+		//script for the layer 
+		function openCity(evt, cityName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+		</script>
+		
+	</div>
+	
+</div>	
+	
+	
+	
+</div>
+</body>

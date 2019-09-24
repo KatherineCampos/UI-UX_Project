@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="en-us" http-equiv="Content-Language">
+	<title>My Perfect Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link href="KC_CSS.css" rel="stylesheet">  <!-- CSS link -->
+	
+</head>
+<body>
+<div class="wrapper">
+	
+	<header>
+		<div id="logo">
+			<a href="index.html"><img alt="myLogo" height="50" src="images/kcLOGO.png" width="60"></a>
+		</div>
+		
+		<nav>
+			<ul>		
+				<li><a href="index.html">Home</a></li>
+				<li><a href="philippines.html">Philippines</a></li>
+				<li><a href="uae.html">United Arab Emirates</a></li>
+				<li><a href="canada.html">Canada</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<div class="breadcrumbs">
+		<p><a href="index.html">Home  ></a> <a href="contact.html"> Contact</a></p>
+	</div>
+	
+	<div class="container">
+		<div class="contactleft">
+			<img alt="letsconnect" src="images/letsConnect.jpg" width="100%"></img><br> &nbsp 
+			<a href="https://www.facebook.com/" target="blank"><img alt="facebook" src="images/fbLogo.jpg" width="20%"></img> </a>
+			<a href="https://twitter.com/" target="blank"><img alt="twitter" src="images/Twitter.png" width="20%"></img> </a>
+			<a href="https://www.instagram.com/" target="blank"><img alt="instagram" src="images/instagram.jfif" width="20%"></img> </a><br><br><br>
+		</div>
+		<div class="contactRight">
+		  <form method="post" Action="mailto:katherine.campos@lethbridgecollege.ca">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			
+			<label for="email">Email Address</label>
+			<input type="text" id="email" name="email" placeholder="Your email address..">
+			
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			  <option value="philippines">Philippines</option>
+			  <option value="uae">United Arab Emirates</option>
+			  <option value="canada">Canada</option>
+			  <option value="other">Others</option>
+			</select>
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
+
+			<input type="submit" value="Submit" onclick="myFunction()">
+
+			<script>
+				function myFunction() {
+				var txt;
+				txt = alert("Thank you for message.  You will be directed to your email.");
+				document.getElementById("info").innterHTML = txt;
+				}
+			</script>
+		  </form>
+	  </div>
+	</div>
+	
+	<br><br>
+	<footer>
+	<p>© 2019 | Katherine Campos | All Rights Reserved </p>
+	</footer>
+</div>
+</body>
